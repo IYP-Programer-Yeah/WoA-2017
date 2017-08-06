@@ -14,7 +14,7 @@ class ICEWEASEL_API ATeamPlayerStart : public APlayerStart
 	GENERATED_BODY()
 
 protected:
-	ATeamPlayerStart();
+	//ATeamPlayerStart();
 
 	
 	

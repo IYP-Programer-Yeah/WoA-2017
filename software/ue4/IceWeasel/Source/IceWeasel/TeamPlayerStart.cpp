@@ -3,9 +3,9 @@
 #include "IceWeasel.h"
 #include "TeamPlayerStart.h"
 
-
+/*
 ATeamPlayerStart::ATeamPlayerStart()
 {
 	//Initialize defaults
 	TeamNumber = TEAM_A;
-}
+}*/
