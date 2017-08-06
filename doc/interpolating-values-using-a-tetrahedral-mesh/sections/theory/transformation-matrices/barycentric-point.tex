@@ -1,0 +1,29 @@
+\subsubsection{Barycentric Coordinates of a Point Projection}
+
+In the case of three vertices of  the  tetrahedron  being located infinitely far
+away, any 3D point located  inside its volume will effectively be projected onto
+the one finite vertex.
+
+The  3  dimensional Cartesian coordinate $\vec{x}\in\mathbb{R}^3$  is  projected
+onto one of the tetrahedron's vertices $v_1 \in \mathbb{R}^3$. This means one of
+the  barycentric  coordinates will always be 1 and the other  three  barycentric
+coordinates will have value 0.  This  can  be  described with the transformation
+matrix:
+
+\begin{equation}
+    \label{eq:point}
+    P = \begin{bmatrix}
+        0 & 0 & 0 & \lambda_1 \\
+        0 & 0 & 0 & \lambda_2 \\
+        0 & 0 & 0 & \lambda_3 \\
+        0 & 0 & 0 & \lambda_4 \\
+    \end{bmatrix}
+\end{equation}
+
+Where one of the entries in $\vec{\lambda}$ has  value  1  and all other entries
+have value 0.
+
+It should be noted that a projection  matrix may be overkill for this particular
+case. However, it is necessary if one wants to generalise  the implementation by
+using a 4x4 matrix.
+
