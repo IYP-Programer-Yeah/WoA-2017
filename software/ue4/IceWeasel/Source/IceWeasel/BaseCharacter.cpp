@@ -36,7 +36,7 @@ ABaseCharacter::ABaseCharacter()
 	SprintSpeed = 600.0f;
 
 	bAlwaysADS = false;
-	bIsInFirstPersonView = true;
+	bIsInFirstPersonView = false;
 
 }
 
