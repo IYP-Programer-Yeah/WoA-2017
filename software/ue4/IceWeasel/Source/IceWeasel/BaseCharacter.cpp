@@ -196,7 +196,7 @@ void ABaseCharacter::DoUnCrouch()
 
 void ABaseCharacter::SetCameraView(bool bFirstPerson)
 {
-	if (bFirstPerson)
+	/*if (bFirstPerson)
 	{
 
 		GetMesh()->SetOwnerNoSee(true);
@@ -210,7 +210,7 @@ void ABaseCharacter::SetCameraView(bool bFirstPerson)
 
 		bIsInFirstPersonView = true;
 	}
-	else
+	else */
 	{
 		GetMesh()->SetOwnerNoSee(false);
 		FirstPersonViewMesh->SetOnlyOwnerSee(false);
