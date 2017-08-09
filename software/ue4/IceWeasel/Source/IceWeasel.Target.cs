@@ -5,21 +5,12 @@ using System.Collections.Generic;
 
 public class IceWeaselTarget : TargetRules
 {
-	public IceWeaselTarget(TargetInfo Target)
+	public IceWeaselTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-	}
 
-	//
-	// TargetRules interface.
-	//
+        ExtraModuleNames.AddRange(new string[] { "IceWeasel" });
+    }
 
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.AddRange( new string[] { "IceWeasel" } );
-	}
+
 }

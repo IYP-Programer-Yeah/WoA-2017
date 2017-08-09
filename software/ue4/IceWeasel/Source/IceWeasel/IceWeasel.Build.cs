@@ -4,8 +4,8 @@ using UnrealBuildTool;
 
 public class IceWeasel : ModuleRules
 {
-	public IceWeasel(TargetInfo Target)
-	{
+	public IceWeasel(ReadOnlyTargetRules Target) : base(Target)
+    {
         MinFilesUsingPrecompiledHeaderOverride = 1;
         bFasterWithoutUnity = true;
 
